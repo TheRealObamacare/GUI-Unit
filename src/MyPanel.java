@@ -3,42 +3,24 @@ import javax.swing.*;
 
 public class MyPanel extends JPanel
 {
-
     public MyPanel ()
     {
-        setSize(800,600);
+        setSize(200,400);
     }
 
     public void paint(Graphics g)
     {
-        int startX = (800 - (75*8)) / 2;
-        int startY = (600 - (75*8)) / 2;
         g.setColor(Color.BLACK);
-        g.fillRect(0, 0, 800, 600);
-        for (int i = 0; i < 8; i++)
-        {
-            for (int j = 0; j < 8; j++)
-            {
-                if ((i + j) % 2 == 0)
-                {
-                    g.setColor(Color.RED);
-                }
-                else
-                {
-                    g.setColor(Color.BLACK);
-                }
-                g.fillRect(startX + i * 75, startY + j * 75, 75, 75);
-                if (j < 3 && (i + j) % 2 == 1)
-                {
-                    g.setColor(Color.WHITE);
-                    g.drawOval(startX + i * 75 + 7, startY + j * 75 + 7, 60, 60);
-                }
-                else if (j > 4 && (i + j) % 2 == 1)
-                {
-                    g.setColor(Color.RED);
-                    g.fillOval(startX + i * 75 + 7, startY + j * 75 + 7, 60, 60);
-                }
-            }
-        }
+        g.fillRect(0, 0, 200, 400);
+        g.setColor(Color.WHITE);
+        int[] xPoints = {25, 50, 150, 175}; 
+        int[] yPoints = {350, 300, 300, 350};
+        int numPoints = 4;
+
+        g.fillPolygon(xPoints, yPoints, numPoints);
+        g.fillRoundRect(60, 110, 80, 200, 25, 10);
+        g.fillPolygon(new int[]{10, 190, 190, 154, 154, 118, 118, 82, 82, 46, 46, 10}, new int[]{120, 120, 60, 60, 90, 90 ,60, 60, 90, 90, 60, 60}, 12);
+//        g.fillRoundRect(50, 275, 100, 50, 50, 50);
+//        g.fillRoundRect(25, 305, 150, 50, 50, 50);
     }
 }
