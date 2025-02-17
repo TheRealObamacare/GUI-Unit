@@ -10,84 +10,92 @@ public class MyPanel extends JPanel
 
     public void paint(Graphics g)
     {
+        g.setColor(new Color(100, 255, 100));
+        g.fillRect(0,0,1000,800);
+        g.setColor(Color.DARK_GRAY);
+        g.fillRect(0,350,1000,300);
+        g.setColor(Color.YELLOW);
+        for (int i = 0; i < 10; i++)
+        {
+            g.fillRect(i*50 + i * 50, 500, 50, 20);
+        }
         g.setColor(Color.BLUE);
-        g.fillRect(0, 0, getWidth(), getHeight());
-        g.setColor(new Color(139, 69, 19));
-        g.fillRect(0, getHeight() - 100, getWidth(), 100);
+        g.fillRect(0, 0, 1000, 250);
+
+        //cloud on left
+        g.setColor(Color.GRAY);
+g.fillOval(200, 100, 50, 50);
+        g.fillOval(225, 100, 50, 50);
+        g.fillOval(250, 80, 50, 50);
+        g.fillOval(230, 70, 50, 50);
+        g.fillOval(200, 70, 50, 50);
+        g.fillOval(180, 100, 50, 50);
+        g.fillOval(180, 75, 50, 50);
+        //cloud middle        //cloud middle
+        g.fillOval(475, 50, 50, 50);
+        g.fillOval(525, 30, 50, 50);
+        g.fillOval(500, 50, 50, 50);
+        g.fillOval(505, 20, 50, 50);
+        g.fillOval(475, 20, 50, 50);
+        g.fillOval(455, 50, 50, 50);
+        g.fillOval(455, 25, 50, 50);
+        //cloud right
+g.fillOval(825, 150, 50, 50);
+        g.fillOval(875, 130, 50, 50);
+        g.fillOval(850, 150, 50, 50);
+        g.fillOval(855, 120, 50, 50);
+        g.fillOval(825, 120, 50, 50);
+        g.fillOval(805, 150, 50, 50);
+        g.fillOval(805, 125, 50, 50);
+        g.setColor(Color.YELLOW);
+        g.fillArc(0, 0, 200, 200, 0, -360);
+
+        //sun rays
+        g.setColor(Color.YELLOW);
+        g.drawLine(100, 100, 0, 0);
+        g.drawLine(100, 100, 200, 200);
+        g.drawLine(100, 100, 0, 200);
+        g.drawLine(100, 100, 200, 0);
+        g.drawLine(100, 100, 100, 0);
+        g.drawLine(100, 100, 100, 200);
+        g.drawLine(100, 100, 0, 100);
+        g.drawLine(100, 100, 200, 100);
+        //YAY
+        //CAR
         g.setColor(Color.RED);
-        Polygon crab = new Polygon();
-        crab.addPoint(320, 530);
-        crab.addPoint(260, 640);
-
-        crab.addPoint(320, 710);
-        crab.addPoint(285, 640);
-
-
-        crab.addPoint(345, 545);
-        crab.addPoint(400, 565);
-        crab.addPoint(370, 555);
-        crab.addPoint(320, 640);
-        crab.addPoint(385, 710);
-
-
-        crab.addPoint(355, 640);
-        crab.addPoint(395, 570);
-        crab.addPoint(480, 610);
-
-
-        crab.addPoint(525, 610);
-        crab.addPoint(540, 600);
-        crab.addPoint(610, 570);
-        crab.addPoint(650, 640);
-        crab.addPoint(620, 710);
-        crab.addPoint(680, 640);
-        crab.addPoint(630, 560);
-        crab.addPoint(660, 545);
-        crab.addPoint(710, 640);
-        crab.addPoint(680, 710);
-        crab.addPoint(750 , 640);
-        crab.addPoint(680, 535);
-        crab.addPoint(920, 320);
-
-
-
-        crab.addPoint(870, 205);
-        crab.addPoint(870, 160);
-        crab.addPoint(810, 130);
-        crab.addPoint(810, 145);
-
-
-        crab.addPoint(840, 205);
-
-        crab.addPoint(760, 160);
-
-        crab.addPoint(745, 145);
-        crab.addPoint(745, 220);
-        crab.addPoint(830, 240);
-        crab.addPoint(870, 320);
-        crab.addPoint(760, 370);
-        crab.addPoint(670, 350);
-        crab.addPoint(335, 350);
-        crab.addPoint(245, 370);
-        crab.addPoint(130, 320);
-        crab.addPoint(180, 240);
-        crab.addPoint(260, 220);
-        crab.addPoint(260, 170);
-        crab.addPoint(240, 160);
-        crab.addPoint(165, 205);
-        crab.addPoint(210, 145);
-        crab.addPoint(190, 130);
-        crab.addPoint(130, 160);
-        crab.addPoint(130, 210);
-        crab.addPoint(80, 320);
-        crab.addPoint(240, 500);
-
-
-        g.fillPolygon(crab);
-
+        g.fillRect(100, 560, 200, 50);
+        g.fillRect(150, 510, 100, 50);
+        g.setColor(Color.BLACK);
+        g.fillOval(125, 600, 50, 50);
+        g.fillOval(225, 600, 50, 50);
+        g.fillRect(150, 510, 100, 50);
         g.setColor(Color.WHITE);
-        g.fillRect(480, 320, 10, 30);
-        g.fillRect(510, 320, 10, 30);
-
+        g.fillOval(135, 610, 30, 30);
+        g.fillOval(235, 610, 30, 30);
+        //CAR 2
+g.setColor(Color.RED);
+        g.fillRect(500, 410, 200, 50);
+        g.fillRect(550, 360, 100, 50);
+        g.setColor(Color.BLACK);
+        g.fillOval(525, 450, 50, 50);
+        g.fillOval(625, 450, 50, 50);
+        g.fillRect(550, 360, 100, 50);
+        g.setColor(Color.WHITE);
+        g.fillOval(535, 460, 30, 30);
+        g.fillOval(635, 460, 30, 30);
+        // Stop sign
+        g.setColor(Color.BLACK);
+        g.fillRect(100, 250, 10, 100);
+        g.setColor(Color.RED);
+        Polygon oct = new Polygon();
+        oct.addPoint(100, 250);
+        oct.addPoint(110, 250);
+        oct.addPoint(130, 230);
+        oct.addPoint(130, 210);
+        oct.addPoint(110, 200);
+        oct.addPoint(100, 200);
+        oct.addPoint(80, 210);
+        oct.addPoint(80, 230);
+        g.fillPolygon(oct);
     }
 }
