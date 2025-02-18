@@ -3,7 +3,7 @@ import java.awt.*;
 
 public class MyFrame extends JFrame {
     public static void main(String[] args) {
-        new MyFrame("Chess Piece");
+        new MyFrame("TIME thingy");
     }
     public MyFrame(String frameName) {
         super(frameName);
