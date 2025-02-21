@@ -13,7 +13,7 @@ public class MyPanel extends JPanel
         g.setColor(new Color(40, 43, 40, 255));
         g.fillRect(0,0,800,800);
         g.setFont(new Font("Times New Roman", Font.BOLD, 50));
-        g.setColor(Color.GRAY);
+        g.setColor(Color.white);
         g.drawString("KEY", 45, 150);
         g.setFont(new Font("Times New Roman", Font.BOLD, 25));
         g.setColor(new Color(244, 187, 244, 255));
