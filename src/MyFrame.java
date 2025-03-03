@@ -2,9 +2,7 @@ import javax.swing.*;
 import java.awt.*;
 
 public class MyFrame extends JFrame {
-    public static void main(String[] args) {
-        new MyFrame("TIME thingy");
-    }
+
     public MyFrame(String frameName) {
         super(frameName);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
